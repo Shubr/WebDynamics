@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial';
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 38px 168px 38px 800px 38px;
+}
+/*NAV*/
+.top-nav{
+    background-color: #000;
+    position: relative;
+}
+.top-nav h3{
+    position: absolute;
+    font-size: 12px;
+    padding-left: 16px;
+    padding-top: 10px;
+    color: #fff;
+}
+.top-nav .login{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 16px;
+}
+/*IMAGE HEADER*/
+.image-header{
+    background-image: url("/images/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+}
+.image-header h1{
+
+    margin-left: 16px;
+}
+
+
+/*Filter Section*/
+.filter-section {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background-color: #dfdfdf;
+    padding-left: 310px;
+}
+
+.search-box{
+    background-color:#fff;
+    height: 100%;
+    width: 308px;
+    display: flex;
+    align-items: center;
+}
+.search-box p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #b6b6b6;
+    margin-left: 28px;
+}
+
+.button-container{
+    width: 40px;
+    height: 38px;
+    background-color: #000;
+    border-radius: 0 4px 4px 0;
+
+}
+button{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    border-style: none;
+}
+
+.dropdown-box{
+    margin-left: 16px;
+    width: 166px;
+    height: 38px;
+    background-color: #fff;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #bababa;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.dropdown-box p{
+    margin-left: 16px;
+    font-size: 14px;
+    color: #b6b6b6;
+}
+.dropdown-box img{
+    margin-right: 16px;
+}
+/*Main*/
+.main{
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    /* place-content: center; */
+    /* align-self: center; */
+    padding-top: 16px;
+    justify-self: center;
+
+}
+
+/*SIDEBAR*/
+.sidebar-menu{
+    grid-row: 1/ span 3;
+    width: 166px;
+}
+
+.sidebar-menu .sidebar-menu-header{
+    height: 29px;
+    background-color: #CBD094;
+    border-radius: 4px 4px 0 0;
+    font: 16px;
+    font-weight: bold;
+    color: #000;
+    display: grid;
+    place-items: center;
+}
+
+.sidebar-menu-main{
+    height: 679px;
+    /* 
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    min-height: 711px; */
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+.sidebar-menu-main li{
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 16px;
+
+}
+.sidebar-menu-main a{
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* .sidebar-menu .sidebar-menu-main p{
+    margin-bottom: 16.4px;
+} */
+
+.sidebar-menu .sidebar-menu-footer{
+    height: 29px;
+    background-color: #CBD094;
+    border-radius: 0 0 4px 4px;
+}
+
+.teams-menu li a{
+    color: blue;
+    font-weight: bold;
+}
+/*PLAYER CARD*/
+.player-grid{
+    margin-left: 16px;
+    width: 1080px;
+    height: 768px;
+    display: grid;
+    grid-template-rows: 245px 245px 245px;
+    grid-template-columns: 166px 166px 166px 166px 166px 166px;
+    gap: 16px;
+}
+
+.coach{
+    width: 166px;
+    height: 768px;
+}
+
+.player-grid header{
+    height:29px;
+    background-color: #CBD094;
+    font-size: 14px;
+    border-radius: 4px 4px 0 0;
+    display: grid;
+    place-items: center;
+}
+
+.img-div img{
+    height: 185px;
+    width: 166px;
+    object-fit: cover;
+    
+}   
+
+.player-grid footer{
+    height:29px;
+    background-color: #CBD094;
+    font-size: 14px;
+    border-radius: 0 0 4px 4px;
+    display: grid;
+    place-items: center;
+}
+
+/*COACH CARD*/
+.coach-card{
+    grid-row: span 3;
+
+}
+.coach-card-header{
+    height:29px;
+    background-color: #CBD094;
+    font-size: 14px;
+    border-radius: 4px 4px 0 0;
+    display: grid;
+    place-items: center;
+}
+
+.coach-card-main{
+    height: 187px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}   
+
+.coach-card-footer{
+    height:29px;
+    background-color: #CBD094;
+    font-size: 14px;
+    border-radius: 0 0 4px 4px;
+    display: grid;
+    place-items: center;
+}
+/*Footer*/
+.footer{
+    background-color: #DFDFDF;
+}
+.footer-title{
+    color: #000;
+    font-size: 12px;
+    padding-left: 16px;
+    padding-top: 10px;
+}

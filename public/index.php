@@ -14,11 +14,11 @@ $router->get('/', function() {
 
 /* Player Routes */
 $router->get('/players/{team_id}', PlayerController::class . '@getPlayersByTeam');
-$router->get('/player/filter/{name}', PlayerController::class . '@filterByName');
-$router->get('/player/filterByPosition/{position}', PlayerController::class . '@filterByPosition');
+$router->get('/players/filter/{name}', PlayerController::class . '@filterByName');
+$router->get('/players/filterByPosition/{position}', PlayerController::class . '@filterByPosition');
 
 /* Team Routes */
-$router->get('/teams', TeamController::class . '@teams');
-$router->get('/team/{id}', PlayerController::class . '@findPlayersByTeam');
+$router->get('/teams', TeamController::class . '@getTeams');
+$router->get('/teams/{id}', TeamController::class . '@getTeams');
 
 $router->dispatch();

@@ -2,7 +2,7 @@ async function fetchPlayers(id) {
     const response = await fetch(`/players/${id}`);
     const data = await response.json();
     await displayPlayers(data)
-    await displayCoach(data)
+    
 }
 
 async function displayPlayers(data) {
@@ -24,9 +24,7 @@ async function displayPlayers(data) {
         );
     });
 }
-async function displayCoach(data) {
-//  Your own code to go here
-}
+
 
 // Fetch players on page load:
 document.addEventListener("DOMContentLoaded", fetchPlayers(1));
