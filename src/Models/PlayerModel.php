@@ -20,10 +20,18 @@ class PlayerModel extends BaseModel
         $stmt = $this->db->query($sql, $params);   
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
-
+    public function getCoach($team_id){
+        $sql = "SELECT * FROM {$this->table} WHERE team_id = :team_id LIMIT 1";
+        $params = [':team_id' => $team_id];
+        $stmt = $this->db->query($sql, $params);
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+    }
     public function filterPlayers($name)
     {
-
+        $sql = "SELECT * FROM {$this->table} WHERE team_id = :team_id LIMIT 18";
+        $params = [':team_id' => $name];
+        $stmt = $this->db->query($sql, $params);   
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
     public function filterPlayersByPosition($position)
     {

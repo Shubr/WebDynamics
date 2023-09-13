@@ -149,14 +149,15 @@ button{
     min-height: 711px; */
     padding-top: 16px;
     padding-left: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
+
 }
 .sidebar-menu-main li{
     list-style: none;
     color: #000;
     text-decoration: none;
     list-style-type: none;
-    margin-bottom: 16px;
+    margin-bottom: 16.71px;
 
 }
 .sidebar-menu-main a{
@@ -178,26 +179,28 @@ button{
 
 .teams-menu li a{
     color: blue;
-    font-weight: bold;
 }
 /*PLAYER CARD*/
 .player-grid{
+    gap: 16px;
     margin-left: 16px;
     width: 1080px;
     height: 768px;
     display: grid;
     grid-template-rows: 245px 245px 245px;
     grid-template-columns: 166px 166px 166px 166px 166px 166px;
-    gap: 16px;
+
 }
 
-.coach{
-    width: 166px;
-    height: 768px;
+.coach-card{
+    display: grid;
+    grid-template-rows: 29px 187px 29px;
+    padding-left: 15px;
 }
 
-.player-grid header{
-    height:29px;
+
+
+.coach-grid header{
     background-color: #CBD094;
     font-size: 14px;
     border-radius: 4px 4px 0 0;
@@ -206,14 +209,12 @@ button{
 }
 
 .img-div img{
-    height: 185px;
+    height: 187px;
     width: 166px;
     object-fit: cover;
-    
-}   
+}  
 
-.player-grid footer{
-    height:29px;
+.coach-grid footer{
     background-color: #CBD094;
     font-size: 14px;
     border-radius: 0 0 4px 4px;
@@ -221,11 +222,33 @@ button{
     place-items: center;
 }
 
-/*COACH CARD*/
-.coach-card{
-    grid-row: span 3;
-
+.player-card{
+    display: grid;
+    grid-template-rows: 29px 187px 29px;
 }
+.player-grid header{
+    background-color: #CBD094;
+    font-size: 14px;
+    border-radius: 4px 4px 0 0;
+    display: grid;
+    place-items: center;
+}
+
+.img-div img{
+    height: 187px;
+    width: 166px;
+    object-fit: cover;
+}  
+
+.player-grid footer{
+    background-color: #CBD094;
+    font-size: 14px;
+    border-radius: 0 0 4px 4px;
+    display: grid;
+    place-items: center;
+}
+
+
 .coach-card-header{
     height:29px;
     background-color: #CBD094;
@@ -254,6 +277,7 @@ button{
 /*Footer*/
 .footer{
     background-color: #DFDFDF;
+    margin-bottom: 1px;
 }
 .footer-title{
     color: #000;

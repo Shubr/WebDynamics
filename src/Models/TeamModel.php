@@ -14,10 +14,5 @@ class TeamModel extends BaseModel
         $stmt = $this->db->query($sql);
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
-    public function getCoach($teams){
-        $sql = "SELECT * FROm {$this->table} WHERE team_id = :team_id LIMIT 1";
 
-        $stmt = $this->db->query($sql);
-        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
-    }
 }

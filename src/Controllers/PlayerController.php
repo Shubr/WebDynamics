@@ -2,7 +2,6 @@
 namespace Richard\Worldcup\Controllers;
 
 use Richard\Worldcup\Models\PlayerModel;
-use Richard\Worldcup\Models\TeamModel;
 use Richard\Worldcup\Lib\Response;
 
 class PlayerController
@@ -25,7 +24,7 @@ class PlayerController
             Response::error('No players found.', [], 404);
         }
     }
-    
+
     public function getCoach($team_id){
         $teams = $this->playerModel->getCoach($team_id);
         if($teams){
@@ -34,12 +33,20 @@ class PlayerController
         }else{
             header('Content-Tpe: application/json');
             http_response_code(404);
-            Response::error('No team found.', [], 404);
+            Response::error('No teams found.', [], 404);
         }
     }
-    public function filterByName($name)
+    public function filterPlayers($name)
     {
-
+        $name = $this->playerModel->filterPlayers($name);
+        if($name){
+            header("Content->Type: application/json");
+            Response::success('', ['teams'=>$name]);
+        }else{
+            header('Content-Tpe: application/json');
+            http_response_code(404);
+            Response::error('No teams found.', [], 404);
+        }
     }
     public function filterByPosition($position)
     {
