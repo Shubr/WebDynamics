@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rugby World Cup - 20cd..</title>
+    <title>Rugby World Cup - 2023</title>
     <link rel="stylesheet" href="/css/main_styles.css">
     <link rel="stylesheet" href="/css/team-color.css">
 </head>
@@ -22,9 +22,26 @@
 
         <div class="filter-section">
             <div class="search-box">
-                <form>
-                    <input id="i" type="text"onblur="filterByPlayer()">
-                </form>
+                    <input id="search-bar" type="text">
+                    <button id="search-button" onclick="filterByPlayer()">GO</button>
+            </div>
+            <div class="position-box">
+                <select id="position-select" onclick="filterByPosition()">
+                    <option value="" selected disabled>Position</option>
+                    <option value="First-five">First-five</option>
+                    <option value="Center">Center</option>
+                    <option value="Flaker(6)">Flaker(6)</option>
+                    <option value="Flaker(7)">Flaker(7)</option>
+                    <option value="Flaker(8)">Flaker(8)</option>
+                    <option value="Fullback">Fullback</option>
+                    <option value="Halfback">Halfback</option>
+                    <option value="Hooker">Hooker</option>
+                    <option value="Lock">Lock</option>
+                    <option value="Loosehead-Prop">Loosehead-Prop</option>
+                    <option value="Second-five">Second-five</option>
+                    <option value="Tighthead-Prop">Tighthead-Prop</option>
+                    <option value="Wing">Wing</option>
+                </select>
             </div>
             <!-- <div class="button-container">
                 <button>GO</button>

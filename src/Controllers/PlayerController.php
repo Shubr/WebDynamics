@@ -36,21 +36,33 @@ class PlayerController
             Response::error('No teams found.', [], 404);
         }
     }
-    public function filterPlayers($name)
+    public function FilterByName($name)
     {
-        $name = $this->playerModel->filterPlayers($name);
-        if($name){
+        $name = urldecode($name);
+
+        $player = $this->playerModel->filterPlayers($name);
+        if($player){
             header("Content->Type: application/json");
-            Response::success('', ['teams'=>$name]);
+            Response::success('', ['players'=>$player]);
         }else{
             header('Content-Tpe: application/json');
             http_response_code(404);
-            Response::error('No teams found.', [], 404);
+            Response::error('No players found.', [], 404);
         }
     }
     public function filterByPosition($position)
     {
+        $position = urldecode($position);
 
+        $player = $this->playerModel->filterPlayersByPosition($position);
+        if($player){
+            header("Content->Type: application/json");
+            Response::success('', ['players'=>$player]);
+        }else{
+            header('Content-Tpe: application/json');
+            http_response_code(404);
+            Response::error('No players found.', [], 404);
+        }
     }
     public function findPlayer($id)
     {

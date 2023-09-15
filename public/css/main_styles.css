@@ -171,6 +171,12 @@ button{
     margin-bottom: 16.4px;
 } */
 
+.search-button{
+    width: 20px;
+    height: 20px;
+    color: #000;
+}
+
 .sidebar-menu .sidebar-menu-footer{
     height: 29px;
     background-color: #CBD094;
