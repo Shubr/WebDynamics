@@ -2,9 +2,9 @@
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require __DIR__ . '/../vendor/autoload.php';
-use Richard\Worldcup\Lib\Router;
-use Richard\Worldcup\Controllers\PlayerController;
-use Richard\Worldcup\Controllers\TeamController;
+use Shubham\Worldcup\Lib\Router;
+use Shubham\Worldcup\Controllers\PlayerController;
+use Shubham\Worldcup\Controllers\TeamController;
 
 $router = new Router();
 

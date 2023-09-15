@@ -1,6 +1,6 @@
 <?php
 
-namespace Richard\Worldcup\Lib;
+namespace Shubham\Worldcup\Lib;
 class Router {
     private $routes = [
         'GET' => [],
@@ -21,7 +21,7 @@ class Router {
         $uri = '/' . trim($uriWithoutQuery, '/');
 
         foreach ($this->routes[$method] as $route => $action) {
-            $routePattern = "#^" . preg_replace('/{([\w]+)}/', '([\w%-]+)', $route) . "$#";
+            $routePattern = "#^" . preg_replace('/{([\w]+)}/', '([\w%()-]+)', $route) . "$#";
             if (preg_match($routePattern, $uri, $matches)) {
                 array_shift($matches);  // remove the entire match from the beginning of the results
                 $this->executeAction($action, $matches);

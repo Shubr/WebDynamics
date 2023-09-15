@@ -1,7 +1,7 @@
 <?php
-namespace Richard\Worldcup\Models;
+namespace Shubham\Worldcup\Models;
 
-use Richard\Worldcup\Models\BaseModel;
+use Shubham\Worldcup\Models\BaseModel;
 
 class PlayerModel extends BaseModel
 {
@@ -35,8 +35,8 @@ class PlayerModel extends BaseModel
     }
     public function filterPlayersByPosition($position)
     {
-        $sql = "SELECT * FROM {$this->table} WHERE name LIKE :name LIMIT 18";
-        $params = [':name' => "%$position%"];
+        $sql = "SELECT * FROM {$this->table} WHERE position = :position LIMIT 18";
+        $params = [':position' => $position];
         $stmt = $this->db->query($sql, $params);   
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }

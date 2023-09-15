@@ -1,8 +1,8 @@
 <?php
-namespace Richard\Worldcup\Controllers;
+namespace Shubham\Worldcup\Controllers;
 
-use Richard\Worldcup\Models\PlayerModel;
-use Richard\Worldcup\Lib\Response;
+use Shubham\Worldcup\Models\PlayerModel;
+use Shubham\Worldcup\Lib\Response;
 
 class PlayerController
 {
@@ -52,8 +52,6 @@ class PlayerController
     }
     public function filterByPosition($position)
     {
-        $position = urldecode($position);
-
         $player = $this->playerModel->filterPlayersByPosition($position);
         if($player){
             header("Content->Type: application/json");

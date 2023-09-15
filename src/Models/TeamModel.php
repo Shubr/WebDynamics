@@ -1,7 +1,7 @@
 <?php
-namespace Richard\Worldcup\Models;
+namespace Shubham\Worldcup\Models;
 
-use Richard\Worldcup\Models\BaseModel;
+use Shubham\Worldcup\Models\BaseModel;
 
 class TeamModel extends BaseModel
 {

@@ -1,8 +1,8 @@
 <?php
-namespace Richard\Worldcup\Controllers;
+namespace Shubham\Worldcup\Controllers;
 
-use Richard\Worldcup\Models\TeamModel;
-use Richard\Worldcup\Lib\Response;
+use Shubham\Worldcup\Models\TeamModel;
+use Shubham\Worldcup\Lib\Response;
 
 class TeamController
 {

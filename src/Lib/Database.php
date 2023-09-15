@@ -1,5 +1,5 @@
 <?php
-namespace Richard\Worldcup\Lib;
+namespace Shubham\Worldcup\Lib;
 class Database
 {
     private $connection;

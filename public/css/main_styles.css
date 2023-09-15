@@ -52,65 +52,24 @@ body{
 /*Filter Section*/
 .filter-section {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center; /* Center items vertically */  
     background-color: #dfdfdf;
     padding-left: 310px;
+    height: 38px;
 }
 
 .search-box{
-    background-color:#fff;
-    height: 100%;
+    height: 35px;
     width: 308px;
-    display: flex;
-    align-items: center;
+    color: #000;
 }
-.search-box p{
-    font-size: 16px;
-    font-weight: bold;
-    color: #b6b6b6;
-    margin-left: 28px;
-}
-
-.button-container{
-    width: 40px;
-    height: 38px;
-    background-color: #000;
-    border-radius: 0 4px 4px 0;
-
-}
-button{
-    width: 100%;
+.search-box input{
     height: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: transparent;
+    padding-bottom: 1px;
     border-style: none;
+    width: 100%;
 }
 
-.dropdown-box{
-    margin-left: 16px;
-    width: 166px;
-    height: 38px;
-    background-color: #fff;
-    align-items: center;
-    font-size: 12px;
-    font-weight: bold;
-    color: #bababa;
-    display: flex;
-    justify-content: space-between;
-    
-    
-}
-
-.dropdown-box p{
-    margin-left: 16px;
-    font-size: 14px;
-    color: #b6b6b6;
-}
-.dropdown-box img{
-    margin-right: 16px;
-}
 /*Main*/
 .main{
     width: 1440px;
@@ -212,25 +171,38 @@ button{
     border-radius: 4px 4px 0 0;
     display: grid;
     place-items: center;
+    border-style: solid;
+    border-color: #b6b6b6;
+    border-width: 1px;
 }
 
 .img-div img{
     height: 187px;
     width: 166px;
     object-fit: cover;
+    border-style: solid;
+    border-color: #b6b6b6;
+    border-width: 1px;
 }  
 
 .coach-grid footer{
+    border-style: solid;
+    border-color: #b6b6b6;
+    border-width: 1px;
     background-color: #CBD094;
     font-size: 14px;
     border-radius: 0 0 4px 4px;
     display: grid;
     place-items: center;
+    border-style: solid;
+    border-color: #b6b6b6;
+    border-width: 1px;
 }
 
 .player-card{
     display: grid;
     grid-template-rows: 29px 187px 29px;
+    
 }
 .player-grid header{
     background-color: #CBD094;
@@ -238,6 +210,9 @@ button{
     border-radius: 4px 4px 0 0;
     display: grid;
     place-items: center;
+    border-style: solid;
+    border-color: #b6b6b6;
+    border-width: 1px;
 }
 
 .img-div img{
@@ -252,6 +227,9 @@ button{
     border-radius: 0 0 4px 4px;
     display: grid;
     place-items: center;
+    border-style: solid;
+    border-color: #b6b6b6;
+    border-width: 1px;
 }
 
 

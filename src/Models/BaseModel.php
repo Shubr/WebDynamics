@@ -1,7 +1,7 @@
 <?php
-namespace Richard\Worldcup\Models;
+namespace Shubham\Worldcup\Models;
 
-use Richard\Worldcup\Lib\Database;
+use Shubham\Worldcup\Lib\Database;
 
 /*
 An abstract class in object-oriented programming is a class that cannot be instantiated on its own. 

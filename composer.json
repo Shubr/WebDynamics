@@ -1,16 +1,16 @@
 {
-    "name": "richard/worldcup",
+    "name": "shubham/worldcup",
     "description": "Assignment One",
     "type": "assignment",
     "autoload": {
         "psr-4": {
-            "Richard\\Worldcup\\": "src/"
+            "Shubham\\Worldcup\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Richard",
-            "email": "r.dargie@ucol.ac.nz"
+            "name": "Shubham",
+            "email": "shubhamrangra80@gmail.com"
         }
     ],
     "require": {}
