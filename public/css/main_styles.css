@@ -6,7 +6,7 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .container{
@@ -19,20 +19,21 @@ body{
 .top-nav{
     background-color: #000;
     position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 .top-nav h3{
     position: absolute;
     font-size: 12px;
-    padding-left: 16px;
-    padding-top: 10px;
+    margin-left: 16px;
     color: #fff;
 }
 .top-nav .login{
     position: absolute;
     right: 0;
     margin: 0;
-    padding-top: 10px;
-    padding-right: 16px;
+    margin-right: 16px;
 }
 /*IMAGE HEADER*/
 .image-header{
@@ -42,6 +43,7 @@ body{
     background-position: center center;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .image-header h1{
 
@@ -52,38 +54,41 @@ body{
 /*Filter Section*/
 .filter-section {
     display: flex;
-    align-items: center; /* Center items vertically */  
     background-color: #dfdfdf;
     height: 38px;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .search-box{
+    padding-left: 596px;
     display: flex;
-    height: 35px;
-    width: 354px;
+    height: 100%;
+    width: 348px;
     color: #000;
-    padding-left: 403px;
 }
 .search-box input{
     height: 100%;
-    padding-bottom: 1px;
     border-style: none;
     width: 100%;
+    border: #b6b6b6;
+
 }
 
 .search-box button{
     width: 40px;
     height: 100%;
     border: outset;
+    border-width: 1px;
     border-color: black;
     color: white;
     background-color: #000;
 }
 
 .position-box{
-    padding-left: 10px;
+    height: 100%;
+    padding-left: 16px;
 }
 
 .position-box select{
@@ -100,7 +105,7 @@ body{
     display: flex;
     /* place-content: center; */
     /* align-self: center; */
-    padding-top: 16px;
+    margin-top: 16px;
     justify-self: center;
 
 }
@@ -183,7 +188,7 @@ body{
 .coach-card{
     display: grid;
     grid-template-rows: 29px 187px 29px;
-    padding-left: 15px;
+    padding-left: 16px;
 }
 
 
@@ -205,6 +210,7 @@ body{
     object-fit: cover;
     border-style: solid;
     border-color: #b6b6b6;
+    border-top: none;
     border-width: 1px;
 }  
 
@@ -284,11 +290,12 @@ body{
 /*Footer*/
 .footer{
     background-color: #DFDFDF;
-    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 .footer-title{
     color: #000;
     font-size: 12px;
-    padding-left: 16px;
-    padding-top: 10px;
+    margin-left: 16px;
 }
