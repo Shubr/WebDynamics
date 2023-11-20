@@ -18,10 +18,17 @@ class Database
     {
         try {
             $stmt = $this->connection->prepare($sql);
-            $stmt->execute($params);
+            
+            // This part will bind the parameters to named placehoder in SQL
+            foreach($params as $key => &$val) {
+                $stmt->bindParam($key, $val);
+            }
+
+            $stmt->execute();
+
             return $stmt;
         } catch (\PDOException $e) {
-            die("Database query error: " . $e->getMessage());
+            throw new \PDOException($e->getMessage(), (int)$e->getCode());
         }
     }
 

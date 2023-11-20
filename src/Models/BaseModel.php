@@ -3,12 +3,6 @@ namespace Shubham\Worldcup\Models;
 
 use Shubham\Worldcup\Lib\Database;
 
-/*
-An abstract class in object-oriented programming is a class that cannot be instantiated on its own. 
-Instead, it serves as a base for other classes to derive from. 
-Abstract classes are meant to be extended by other classes, 
-providing a common set of methods and properties that its child classes can use. 
-*/
 abstract class BaseModel
 {
     protected $db;

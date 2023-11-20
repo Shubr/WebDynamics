@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'name' => 'richard/worldcup',
+        'name' => 'Shubham/worldcup',
         'pretty_version' => '1.0.0+no-version-set',
         'version' => '1.0.0.0',
         'reference' => NULL,
@@ -10,7 +10,7 @@
         'dev' => true,
     ),
     'versions' => array(
-        'richard/worldcup' => array(
+        'Shubham/worldcup' => array(
             'pretty_version' => '1.0.0+no-version-set',
             'version' => '1.0.0.0',
             'reference' => NULL,

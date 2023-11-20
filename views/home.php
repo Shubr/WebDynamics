@@ -11,10 +11,29 @@
 </head>
 
 <body>
+    <?php
+        if($_COOKIE == true) {
+            $isAuthenticated = true;
+        }
+        else {
+            $isAuthenticated = false;
+        }
+    ?>
     <div class="container">
         <div class="top-nav">
-            <h3 class="top-title">RWC 2023</h3>
-            <h3 class="login">Login</h3>
+            <h3 class="top-title">Rugby World Cup-2023</h3>
+            <div class="nav-link">
+
+                <?php if(!$isAuthenticated): ?>
+                    <a id="logoutLink" href="/logout">Logout</a> 
+                    <a  href="/dashboard">Dashboard</a>
+                <?php else: ?>
+                <a class="register" href="/register">Register</a>
+                <a class="login" href="/login">Login</a>
+
+                <?php endif; ?>
+            </div>
+
         </div>
         <div class="image-header">
             <h1>Rugby World Cup - France 2023</h1>
@@ -67,9 +86,10 @@
     </div>
 
 
-    <script src="/js/players.js"></script>
-    <script src="/js/teams.js"></script>
-    <script src="/js/search.js"></script>
+    <script src="/js/players.js"></script> <!-- Links the players java script to the html -->
+    <script src="/js/teams.js"></script> <!-- Links the teams java script to the html -->
+    <script src="/js/search.js"></script> <!-- Links the search java script to the html -->
+    <script src="/js/logout.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,7 @@
-async function fetchTeams(id) {
-    const response = await fetch(`/teams/${id}`);
+async function fetchTeams() {
+    const response = await fetch('/teams');
     const data = await response.json();
     await displayTeams(data)
-
 }
 
 async function displayTeams(data) {
@@ -15,6 +14,5 @@ async function displayTeams(data) {
           );
     });
 }
-
 // Fetch teams on page load:
-document.addEventListener("DOMContentLoaded", fetchTeams(1));
+document.addEventListener("DOMContentLoaded", fetchTeams);

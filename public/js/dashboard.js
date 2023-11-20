@@ -1,8 +1,11 @@
+let currentId;
+
 async function fetchPlayers(id) {
-    const response = await fetch(`/players/${id}`);
+    currentId = id;
+    const response = await fetch(`/players/${currentId}`);
     const data = await response.json();
-    await displayPlayers(data)
-    await displayCoach(data)
+    await displayPlayers(data);
+    await displayCoach(data);
 }
 
 async function displayPlayers(data) {
@@ -16,14 +19,19 @@ async function displayPlayers(data) {
                 <div class="img-div">
                     <img src="/images/players/${player.team}/${player.image}" alt="Player Image">
                 </div>
-                <footer id="player-footer" class="${player.team.toLowerCase()}-bottom"> ${player.position} </footer>
+                <footer id="playerFooter-Crud" class="${player.team.toLowerCase()}-bottom">      
+                    <i class="fas fa-edit"></i> 
+                    ${player.position} 
+                    <i class="fas fa-trash" data-id=${player.id} onclick="confirmDelete(this)"></i> 
+                </footer>
             </div>
         `;
-        
+        card.querySelector(".fa-edit").addEventListener("click", () => openModal(player.id, player.name, player.position));
         playerGrid.appendChild(card);
     });
     
 }
+
 
 
 async function displayCoach(data) {
@@ -41,11 +49,7 @@ async function displayCoach(data) {
                 <div class="img-div">
                         <img src="/images/coaches/${player.coach}.png" alt="Player Image">
                 </div>
-                <footer id="coach-footer" class="${player.team.toLowerCase()}-bottom">
-                    <i class="fa-sharp fa-solid fa-pen-to-square" style="color: #216a20;"></i> 
-                    Coach
-                    <i class="fa-sharp fa-solid fa-trash" style="color: #e03739;"></i> 
-                </footer>
+                <footer id="coach-footer" class="${player.team.toLowerCase()}-bottom">Coach</footer>
             </div>
             `       
         );   
