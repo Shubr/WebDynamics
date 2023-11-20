@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="/css/team-color.css"> 
 </head>
 <body>
-    <div class="overlay"></div>
-    
     <div class="container">
         <div class="top-nav_">
             <h3 class="top-title">Rugby World Cup-2023</h3>
@@ -70,20 +68,7 @@
             <h3 class="footer-title">Created by Shubham Rangra</h3>
         </div>
     </div>
-
-    </div>
-    
-    <script src="/js/dashboard.js"></script> 
-    <script src="/js/teams.js"></script> 
-    <script src="/js/search.js"></script> 
-    <script src="/js/modal.js"></script> 
-    <script src="/js/edit_player.js"></script> 
-    <script src="/js/delete_player.js"></script> 
-    <script src="/js/logout.js"></script> 
-    <script src="https://kit.fontawesome.com/6752b02a43.js" crossorigin="anonymous"></script>
-</body>
-
-<div id="editPlayerModal" class="modal">
+    <div id="editPlayerModal" class="modal">
         <div class="modal-content">
 
             <header>
@@ -105,4 +90,15 @@
                 <button class="update-btn"type="submit">Update</button>
             </form>
         </div>
+    </div>
+    <script src="/js/dashboard.js"></script> 
+    <script src="/js/teams.js"></script> 
+    <script src="/js/search.js"></script> 
+    <script src="/js/modal.js"></script> 
+    <script src="/js/edit_player.js"></script> 
+    <script src="/js/delete_player.js"></script> 
+    <script src="/js/logout.js"></script> 
+    <script src="https://kit.fontawesome.com/6752b02a43.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
